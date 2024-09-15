@@ -35,7 +35,7 @@ const signUp = (event) => {
   auth.createUserWithEmailAndPassword(email, password)
       .then((userCredential) => {
           const user = userCredential.user;
-          document.getElementById("additionalInfoModal").style.display = "none";
+          document.getElementById("additionalInfoModal").style.display = "block";
           alert("User registered: " + user.email);
           document.getElementById("registerUser").style.display="none";
           document.getElementById("loginUser").style.display="block";
